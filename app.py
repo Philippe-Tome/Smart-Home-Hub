@@ -12,7 +12,7 @@ class App(QtWidgets.QMainWindow, Ui_MainWindow):
         super(App, self).__init__(parent) # append our ui code to the rest of this class
         self.setupUi(self)  # setting all the Ui up
 
-        self.red_led=12
+        self.red_pin=12
         self.green_pin=16
         self.blue_pin=20
         # self.button_pin=20
@@ -29,22 +29,44 @@ class App(QtWidgets.QMainWindow, Ui_MainWindow):
         self.button_1_state=False
         self.button_2_state=False
         self.button_3_state=False
-        self.pushButton.clicked.connect(self.toggleLight)
-        self.pushButton_2.clicked.connect(self.toggleLight)
-        self.pushButton_3.clicked.connect(self.toggleLight)
+        self.pushButton.clicked.connect(self.toggleLight1)
+        self.pushButton_2.clicked.connect(self.toggleLight2)
+        self.pushButton_3.clicked.connect(self.toggleLight3)
 
 
-    def toggleLight(self):
-        if self.button_state==False:
-            self.button_state=True
+    def toggleLight1(self):
+        if self.button_1_state==False:
+            self.button_1_state=True
             self.pushButton.setText("on")
-            GPIO.output(self.led_pin, True)
+            GPIO.output(self.red_pin, True)
         else:
-            self.button_state=False
+            self.button_1_state=False
             self.pushButton.setText("off")
+            GPIO.output(self.red_pin, False)
+        print("red button pressed")
 
-            GPIO.output(self.led_pin, False)
-        print("push button pressed")
+    def toggleLight2(self):
+        if self.button_2_state==False:
+            self.button_2_state=True
+            self.pushButton_2.setText("on")
+            GPIO.output(self.green_pin, True)
+        else:
+            self.button_2_state=False
+            self.pushButton_2.setText("off")
+            GPIO.output(self.green_pin, False)
+        print("green button pressed")
+
+    def toggleLight3(self):
+        if self.button_3_state==False:
+            self.button_3_state=True
+            self.pushButton_3.setText("on")
+            GPIO.output(self.blue_pin, True)
+        else:
+            self.button_3_state=False
+            self.pushButton_3.setText("off")
+            GPIO.output(self.blue_pin, False)
+        print("blue button pressed")
+
 
 
 # button 
