@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
         self.pushButton_3.setGeometry(QtCore.QRect(80, 220, 151, 51))
         self.pushButton_3.setObjectName("pushButton_3")
         self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_4.setGeometry(QtCore.QRect(410, 310, 111, 71))
+        self.pushButton_4.setGeometry(QtCore.QRect(330, 220, 111, 71))
         self.pushButton_4.setAutoFillBackground(False)
         self.pushButton_4.setObjectName("pushButton_4")
         MainWindow.setCentralWidget(self.centralwidget)

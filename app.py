@@ -12,15 +12,16 @@ class App(QtWidgets.QMainWindow, Ui_MainWindow):
         super(App, self).__init__(parent) # append our ui code to the rest of this class
         self.setupUi(self)  # setting all the Ui up
 
-        self.red_pin=12
+        self.red_pin=12 # LEDs
         self.green_pin=16
         self.blue_pin=20
-        # self.button_pin=20
+        self.push_button=15 # mechanical push button
 
-        # GPIO.setup(self.button_pin, GPIO.IN)
         GPIO.setup(self.red_pin, GPIO.OUT)
         GPIO.setup(self.green_pin, GPIO.OUT)
         GPIO.setup(self.blue_pin, GPIO.OUT)
+        GPIO.setup(self.push_button, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+
         GPIO.output(self.red_pin, False)
         GPIO.output(self.green_pin, False)
         GPIO.output(self.blue_pin, False)
@@ -29,9 +30,18 @@ class App(QtWidgets.QMainWindow, Ui_MainWindow):
         self.button_1_state=False
         self.button_2_state=False
         self.button_3_state=False
+
         self.pushButton.clicked.connect(self.toggleLight1)
         self.pushButton_2.clicked.connect(self.toggleLight2)
         self.pushButton_3.clicked.connect(self.toggleLight3)
+
+        GPIO.add_event_detect(self.push_button,GPIO.RISING,callback=self.button_callback) 
+        
+        message = input("Press enter to quit\n\n") 
+
+    def button_callback(self, channel):
+        print("Button was pushed!")
+        self.pushButton_4.setText("on")
 
 
     def toggleLight1(self):
