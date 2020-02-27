@@ -1,9 +1,9 @@
 import sys
-import Adafruit_DHT
-from RPi import GPIO
 from PyQt5 import QtWidgets as qtw
 from PyQt5 import QtGui as qtg
 from PyQt5 import QtCore as qtc
+import Adafruit_DHT
+from RPi import GPIO
 
 SENSOR_MODEL = 11
 GPIO.setmode(GPIO.BCM)
