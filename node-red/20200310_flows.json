@@ -1,0 +1,747 @@
+[
+    {
+        "id": "9ed3b4c7.2a0f78",
+        "type": "tab",
+        "label": "Analog",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1e7cfa01.89be56",
+        "type": "tab",
+        "label": "Switches",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a0a4ed6.82ae31",
+        "type": "tab",
+        "label": "Tasmota",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4c49bc2a.868a94",
+        "type": "tab",
+        "label": "Temperature control",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ec165177.816",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "feecac17.0ebe1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "dark"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "lockMenu": "false",
+            "allowTempTheme": "none",
+            "dateFormat": "03/03/2020",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7e450fc4.4295d",
+        "type": "ui_group",
+        "z": "",
+        "name": "Switches",
+        "tab": "5d7fdfeb.6f6a5",
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
+        "id": "c09469b0.03eed8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Analog",
+        "tab": "ec165177.816",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5d7fdfeb.6f6a5",
+        "type": "ui_tab",
+        "z": "",
+        "name": "LEDs",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5c731c27.183504",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "local MQTT",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "14ed5354.55018d",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Temperature Control",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "afcd632b.6bee5",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperature",
+        "tab": "14ed5354.55018d",
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "b17ec920.87c668",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperature",
+        "tab": "ec165177.816",
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "10a75e88.264b31",
+        "type": "ui_group",
+        "z": "",
+        "name": "Humidity",
+        "tab": "ec165177.816",
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e28d2f4c.da161",
+        "type": "ui_group",
+        "z": "",
+        "name": "Humidity",
+        "tab": "ec165177.816",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "4702bbd2.e5a1e4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Humidity",
+        "tab": "14ed5354.55018d",
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "27451ca2.674b24",
+        "type": "ui_switch",
+        "z": "1e7cfa01.89be56",
+        "name": "",
+        "label": "Red LED Button",
+        "tooltip": "",
+        "group": "7e450fc4.4295d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "c7a6eb5e.d645a8"
+            ]
+        ],
+        "icon": "font-awesome/fa-circle",
+        "info": "<h1>TEST H1</h1>"
+    },
+    {
+        "id": "c7a6eb5e.d645a8",
+        "type": "rpi-gpio out",
+        "z": "1e7cfa01.89be56",
+        "name": "Red LED",
+        "pin": "32",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 430,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "71a7b1dd.0614a",
+        "type": "ui_switch",
+        "z": "1e7cfa01.89be56",
+        "name": "",
+        "label": "Green LED Button",
+        "tooltip": "",
+        "group": "7e450fc4.4295d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 170,
+        "y": 129,
+        "wires": [
+            [
+                "9a5c1567.e89a18"
+            ]
+        ]
+    },
+    {
+        "id": "9a5c1567.e89a18",
+        "type": "rpi-gpio out",
+        "z": "1e7cfa01.89be56",
+        "name": "Green LED",
+        "pin": "36",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 430,
+        "y": 129,
+        "wires": []
+    },
+    {
+        "id": "79a5aad0.64a9d4",
+        "type": "ui_switch",
+        "z": "1e7cfa01.89be56",
+        "name": "",
+        "label": "Blue LED Button",
+        "tooltip": "",
+        "group": "7e450fc4.4295d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "3172fa5d.6e6006"
+            ]
+        ]
+    },
+    {
+        "id": "3172fa5d.6e6006",
+        "type": "rpi-gpio out",
+        "z": "1e7cfa01.89be56",
+        "name": "Blue LED",
+        "pin": "38",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "x": 420,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d03b38da.a99cd8",
+        "type": "ui_ui_control",
+        "z": "1e7cfa01.89be56",
+        "name": "Tab to Analog",
+        "events": "change",
+        "x": 180,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "731f7861.bda288",
+        "type": "mqtt out",
+        "z": "a0a4ed6.82ae31",
+        "name": "",
+        "topic": "cmnd/tasmota4683/POWER",
+        "qos": "",
+        "retain": "",
+        "broker": "5c731c27.183504",
+        "x": 680,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "987534bf.6d66d8",
+        "type": "inject",
+        "z": "a0a4ed6.82ae31",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "658fc32a.f41a1c"
+            ]
+        ]
+    },
+    {
+        "id": "658fc32a.f41a1c",
+        "type": "function",
+        "z": "a0a4ed6.82ae31",
+        "name": "toggle",
+        "func": "if(msg.payload){\n msg.payload = \"TOGGLE\"\n}\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "731f7861.bda288",
+                "b76c8284.45901"
+            ]
+        ]
+    },
+    {
+        "id": "b76c8284.45901",
+        "type": "debug",
+        "z": "a0a4ed6.82ae31",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 630,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "fe63781a.ab7be8",
+        "type": "mqtt in",
+        "z": "a0a4ed6.82ae31",
+        "name": "",
+        "topic": "stat/tasmota4683/RESULT",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "5c731c27.183504",
+        "x": 180,
+        "y": 400,
+        "wires": [
+            [
+                "33bf2ce3.3c3fa4"
+            ]
+        ]
+    },
+    {
+        "id": "33bf2ce3.3c3fa4",
+        "type": "function",
+        "z": "a0a4ed6.82ae31",
+        "name": "toggle",
+        "func": "\nif(msg.payload.POWER == \"ON\"){\n    msg.payload = 1\n} else {\n    msg.payload = 0\n}\n    \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "d5172f28.f0d3f"
+            ]
+        ]
+    },
+    {
+        "id": "d5172f28.f0d3f",
+        "type": "debug",
+        "z": "a0a4ed6.82ae31",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 610,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "df07c93d.8f0158",
+        "type": "rpi-dht22",
+        "z": "4c49bc2a.868a94",
+        "name": "DHT11",
+        "topic": "rpi-dht22",
+        "dht": "11",
+        "pintype": "0",
+        "pin": "26",
+        "x": 410,
+        "y": 260,
+        "wires": [
+            [
+                "2f69905d.eda85",
+                "3a734cdc.1b0aa4"
+            ]
+        ]
+    },
+    {
+        "id": "2f69905d.eda85",
+        "type": "function",
+        "z": "4c49bc2a.868a94",
+        "name": "temperature",
+        "func": "msg.payload = msg.payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 610,
+        "y": 200,
+        "wires": [
+            [
+                "837e407f.f192d",
+                "469940a1.41396",
+                "cf9fe06d.2d8a2"
+            ]
+        ]
+    },
+    {
+        "id": "837e407f.f192d",
+        "type": "debug",
+        "z": "4c49bc2a.868a94",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 870,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "469940a1.41396",
+        "type": "ui_chart",
+        "z": "4c49bc2a.868a94",
+        "name": "",
+        "group": "afcd632b.6bee5",
+        "order": 0,
+        "width": "6",
+        "height": "6",
+        "label": "Temperature history",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "40",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#f35152",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 900,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "582324ca.bbf99c",
+        "type": "inject",
+        "z": "4c49bc2a.868a94",
+        "name": "tempLoggingTrigger",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 180,
+        "y": 260,
+        "wires": [
+            [
+                "df07c93d.8f0158"
+            ]
+        ]
+    },
+    {
+        "id": "3a734cdc.1b0aa4",
+        "type": "function",
+        "z": "4c49bc2a.868a94",
+        "name": "humidity",
+        "func": "msg.payload = msg.humidity\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 600,
+        "y": 320,
+        "wires": [
+            [
+                "52decbe2.1de184",
+                "219e674d.b571b8",
+                "c4e074a7.bec938"
+            ]
+        ]
+    },
+    {
+        "id": "52decbe2.1de184",
+        "type": "debug",
+        "z": "4c49bc2a.868a94",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 870,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "cf9fe06d.2d8a2",
+        "type": "ui_gauge",
+        "z": "4c49bc2a.868a94",
+        "name": "",
+        "group": "b17ec920.87c668",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "c",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "45",
+        "colors": [
+            "#2a0cf2",
+            "#e6e600",
+            "#f30505"
+        ],
+        "seg1": "0",
+        "seg2": "30",
+        "x": 870,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "219e674d.b571b8",
+        "type": "ui_gauge",
+        "z": "4c49bc2a.868a94",
+        "name": "",
+        "group": "10a75e88.264b31",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#2a0cf2",
+            "#e6e600",
+            "#f30505"
+        ],
+        "seg1": "0",
+        "seg2": "50",
+        "x": 860,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c4e074a7.bec938",
+        "type": "ui_chart",
+        "z": "4c49bc2a.868a94",
+        "name": "",
+        "group": "4702bbd2.e5a1e4",
+        "order": 0,
+        "width": "6",
+        "height": "6",
+        "label": "Humidity history",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#f1790f",
+            "#2ca02c",
+            "#98df8a",
+            "#f35152",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 880,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    }
+]
