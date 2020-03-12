@@ -36,3 +36,7 @@ I am a big fan of privacy and after everything that has happened in the past few
 - MQTT
 - Mosquitto v1.5.7
 - Tasmota v8.1.0.10
+
+## Flows:
+
+![]()
