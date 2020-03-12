@@ -39,4 +39,4 @@ I am a big fan of privacy and after everything that has happened in the past few
 
 ## Flows:
 
-![]()
+![Email images from door camera](./flowScreenshots/emailImg.png)
