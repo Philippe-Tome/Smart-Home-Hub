@@ -39,4 +39,14 @@ I am a big fan of privacy and after everything that has happened in the past few
 
 ## Flows:
 
-![Email images from door camera](./flowScreenshots/emailImg.png)
+- Flow for the door camera presence detection and emailing photo:
+  ![](./flowScreenshots/emailImg.png)
+
+- Flow to detect is home by using WiFi detection:
+  ![](./flowScreenshots/isHome.png)
+
+- Flow to control the lights:
+  ![](./flowScreenshots/lightControl.png)
+
+- Flow for the temperature control:
+  ![](./flowScreenshots/tempCtrl.png)
