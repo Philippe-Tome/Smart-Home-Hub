@@ -50,3 +50,8 @@ I am a big fan of privacy and after everything that has happened in the past few
 
 - Flow for the temperature control:
   ![](./flowScreenshots/tempCtrl.png)
+
+<!-- Problem solving
+demo solution
+challenges & coolt tech
+lessons learnt -->
