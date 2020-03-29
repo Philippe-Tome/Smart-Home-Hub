@@ -2,6 +2,8 @@
 
 ![iPhonexScreenshot](./images/iPhoneXScreenshot_iphonesespacegrey_portrait.png)
 
+Video demo here: https://youtu.be/ARp1G0b43_s
+
 1. [What is a Smart Home Hub?](#what)
 2. [Why creating my own?](#why)
 3. [Functionalities](#functionalities)
